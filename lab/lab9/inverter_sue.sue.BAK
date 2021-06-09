@@ -1,0 +1,25 @@
+proc SCHEMATIC_inverter_sue {} {
+make global -orient RXY -name vdd -origin {7400 1110}
+make global -name gnd -origin {7400 1440}
+make output -name vout -origin {7430 1280}
+make input -name vin -origin {7250 1280}
+make scmosn4 -name M0 -origin {7400 1360}
+make scmosp4 -name M1 -origin {7400 1200}
+  make_wire 7400 1200 7420 1200
+  make_wire 7420 1200 7420 1160
+  make_wire 7420 1160 7400 1160
+  make_wire 7400 1360 7420 1360
+  make_wire 7420 1360 7420 1400
+  make_wire 7420 1400 7400 1400
+  make_wire 7340 1200 7280 1200
+  make_wire 7280 1360 7340 1360
+  make_wire 7400 1280 7430 1280
+  make_wire 7400 1240 7400 1280
+  make_wire 7400 1280 7400 1320
+  make_wire 7280 1280 7250 1280
+  make_wire 7280 1200 7280 1280
+  make_wire 7280 1280 7280 1360
+  make_wire 7400 1110 7400 1160
+  make_wire 7400 1400 7400 1440
+}
+
